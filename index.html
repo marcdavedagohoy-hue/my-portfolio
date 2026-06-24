@@ -115,14 +115,26 @@ header{
     cursor:pointer; 
     transition:0.3s;
 
+    animation: float 3s ease-in-out infinite; 
+} 
+    @keyframes float { 
+        0% { 
+            transform: translateY(0px); 
+        } 50% { 
+            transform: translateY(-15px); 
+        } 100% { 
+            transform: translateY(0px); 
+        } 
 }
 .tech-stack-img{
-    width:40%;
-    max-width:400px;
+    width:150%;
+    max-width:180px;
     display:block;
     margin:20px auto;
     border-radius:12px;
     box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    cursor:pointer; 
+    transition:0.3s;
 }
     
 .header-content{
