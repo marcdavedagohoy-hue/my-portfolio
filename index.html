@@ -146,7 +146,56 @@ header{
 .gallery img:hover{
     transform:scale(1.4);
 }
-    
+ ```css
+    /* Smooth scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Navigation Bar */
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    background:#0f172a;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+    z-index:1000;
+}
+
+/* Logo */
+.logo-img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+/* Navigation Links */
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+    margin:0;
+    padding:0;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}   
 .header-content{
     text-align:left;
 }
@@ -165,6 +214,23 @@ header{
 
 <body>
 
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo" class="logo-img">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+    
 <header>
     <img src="images/ai.png" 
         alt="Profile Photo" 
